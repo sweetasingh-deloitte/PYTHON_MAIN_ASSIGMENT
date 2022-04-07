@@ -1,11 +1,22 @@
 import time
 
 
+def login():
+    with open("AdminData.csv", mode="r") as f:
+        reader = csv.reader(f, delimiter=",")
+        for row in reader:
+            if row == [email, password]:
+                print("You are logged in!")
+                return True
+    print("Please try again!")
+    return False
+
+
 
 def admin_role():
     while True:
         #Select the choices here
-        print("---------- Welcome Admin ----------")
+        print("**************WELCOME ADMIN**************")
         print("1. Add New Movie Info ")
         print("2. Edit Movie Info ")
         print("3. Delete Movies ")
