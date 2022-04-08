@@ -26,10 +26,6 @@ def edit_movie():
             print("5.  To edit director ")
             print("6. To edit rating ")
             print("7. To edit language")
-            print("8. To edit no of shows")
-            print("8. To edit first show")
-            print("8. To edit interval time")
-            print("8. To edit gap between show")
             print("9. To edit capacity")
 
             edit_option = int(input("Please enter your edit option : "))

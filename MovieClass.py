@@ -1,7 +1,7 @@
 class Movie:
 
     # constructor method to create Movie object
-    def __init__(self, title, genre, length, cast, director, admin_rating, language, timing, no_of_shows, first_show, inta_time, gap_btw_shows, capacity):
+    def __init__(self, title, genre, length, cast, director, admin_rating, language, timing, capacity):
 
         self.title = title
         self.genre = genre
@@ -11,10 +11,6 @@ class Movie:
         self.admin_rating = admin_rating
         self.language = language
         self.timing = timing
-        self.no_of_shows = no_of_shows
-        self.first_show = first_show
-        self.inta_time = inta_time
-        self.gap_btw_shows = gap_btw_shows
         self.capacity = capacity
 
 

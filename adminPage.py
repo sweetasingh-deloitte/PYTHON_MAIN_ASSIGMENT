@@ -35,15 +35,11 @@ def admin_role():
             language = input("Movie language : ")
             show_timing = input("Show timing eg. timing1 ,timings2: ")
             timing = show_timing.split(',')
-            no_of_shows = input("Number of Shows in a day: ")
-            first_show = input("Enter first show timing: ")
-            inta_time = input("Enter interval timing: ")
-            gap_btw_shows = input("Gap Between Shows: ")
             capacity_input = input("Capacity per show: eg. 50,60 ")
             capacity = capacity_input.split(',')
 
             # creating an object of the Movie class
-            movie = Movie(title, genre, length, cast, director, admin_rating, language, timing, no_of_shows,first_show,inta_time,gap_btw_shows,capacity)
+            movie = Movie(title, genre, length, cast, director, admin_rating, language, timing,capacity)
 
             # append the created object into movie list that stores all the movies
             movies_list.append(movie)
